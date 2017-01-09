@@ -6,7 +6,7 @@ module Components
 
     before_mount do
       # initialize our state/stores
-      state.new_todo! Todo.new
+      state.new_todo! Todo.new(completed: false)
       Index.filter! :all
     end
 
@@ -17,7 +17,7 @@ module Components
           # Display an EditItem component in the header, and
           # as each Todo is saved, update the value of the new_todo state
           EditItem(todo: state.new_todo).
-          on(:save) { state.new_todo! Todo.new }
+          on(:save) { state.new_todo! Todo.new(completed: false) }
         end
         ul.todo_list do
           # send the current filter name to the Todo class to get the
