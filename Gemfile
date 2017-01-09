@@ -45,34 +45,9 @@ group :development do
 end
 
 gem 'reactive-ruby'
-gem 'react-rails', '>= 1.3.0'
-gem 'opal-rails', '>= 0.8.1'
+gem 'react-rails', '~> 1.3.0'
+gem 'opal-rails', '0.8.1'
 gem 'therubyracer', platforms: :ruby
-gem 'react-router-rails', '~> 0.13.3'
-gem 'reactrb-router'
-gem 'reactive-record', '>= 0.8.0'
-
-
-group :test do
-  gem "rspec"
-  gem "rspec-rails"
-  gem "rspec-mocks"
-  gem "rspec-expectations"
-  gem "pry"
-  gem 'pry-rescue'#, git: "https://github.com/joallard/pry-rescue.git"
-  gem 'pry-stack_explorer'
-  gem "factory_girl_rails"
-  gem 'shoulda'
-  gem 'shoulda-matchers'
-  gem 'rspec-its'
-  gem 'rspec-collection_matchers'
-  gem 'database_cleaner', git: "https://github.com/DatabaseCleaner/database_cleaner.git"
-  gem 'capybara'
-  gem 'selenium-webdriver'
-  gem "poltergeist"
-  gem 'spring-commands-rspec'
-  gem 'chromedriver-helper'
-  gem 'rspec-steps'
-  gem 'parser'
-  gem 'unparser'
-end
+gem 'react-router-rails', '~>0.13.3'
+gem 'reactive-router'
+gem 'reactive-record', "0.7.43"
